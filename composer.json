@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": "^5.4 || ^7.0",
-        "xloit/xloit-bridge-zend-log": "^0.0",
+        "xloit/xloit-bridge-zend-log": "^0.1",
         "xloit/xloit-bridge-zend-eventmanager": "^0.0",
         "xloit/xloit-bridge-zend-servicemanager": "^1.0",
         "zendframework/zend-http": "^2.5",
