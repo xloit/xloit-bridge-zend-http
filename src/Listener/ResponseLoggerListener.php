@@ -27,7 +27,6 @@ use Zend\Stdlib\RequestInterface as HttpRequest;
 /**
  * A {@link ResponseLoggerListener} class.
  *
- * @since   0.0.1
  * @package Xloit\Bridge\Zend\Http\Listener
  */
 class ResponseLoggerListener extends AbstractListenerAggregate implements LoggerAwareInterface
@@ -38,8 +37,6 @@ class ResponseLoggerListener extends AbstractListenerAggregate implements Logger
      * Attach one or more listeners.
      * Implementors may add an optional $priority argument; the EventManager implementation will pass
      * this to the aggregate.
-     *
-     * @since 0.0.1
      *
      * @param EventManagerInterface $events
      * @param int                   $priority
@@ -69,12 +66,9 @@ class ResponseLoggerListener extends AbstractListenerAggregate implements Logger
     /**
      *
      *
-     * @since 0.0.1
-     *
      * @param MvcEvent $event
      *
      * @return void
-     * @throws \Zend\Log\Exception\InvalidArgumentException
      */
     public function logResponse(MvcEvent $event)
     {
@@ -98,22 +92,19 @@ class ResponseLoggerListener extends AbstractListenerAggregate implements Logger
                 ]
             ];
 
-            $this->getLogger()->debug($messages, true);
+            $this->getLogger()->debug('Response', $messages);
         }
     }
 
     /**
      *
      *
-     * @since    0.0.1
-     * @internal param \Zend\Mvc\MvcEvent $event
-     *
      * @return void
-     * @throws \Zend\Log\Exception\InvalidArgumentException
      */
     public function shutdown()
     {
         /** @noinspection PhpUndefinedMethodInspection */
+        /** @noinspection ForeachSourceInspection */
         foreach ($this->getLogger()->getWriters() as $writer) {
             /** @noinspection PhpUndefinedMethodInspection */
             $writer->shutdown();

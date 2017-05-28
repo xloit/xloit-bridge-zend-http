@@ -22,7 +22,6 @@ use Zend\Http\Request;
 /**
  * A {@link RequestAwareTrait} trait.
  *
- * @since   0.0.1
  * @package Xloit\Bridge\Zend\Http
  */
 trait RequestAwareTrait
@@ -30,7 +29,6 @@ trait RequestAwareTrait
     /**
      *
      *
-     * @since 0.0.1
      * @var Request
      */
     protected $request;
@@ -38,7 +36,6 @@ trait RequestAwareTrait
     /**
      *
      *
-     * @since 0.0.1
      * @return Request
      */
     public function getRequest()
@@ -49,11 +46,9 @@ trait RequestAwareTrait
     /**
      *
      *
-     * @since 0.0.1
-     *
      * @param Request $request
      *
-     * @return static
+     * @return $this
      */
     public function setRequest(Request $request)
     {

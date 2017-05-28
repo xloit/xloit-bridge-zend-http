@@ -22,7 +22,6 @@ use Zend\Http\Request;
 /**
  * A {@link RequestAwareInterface} interface.
  *
- * @since   0.0.1
  * @package Xloit\Bridge\Zend\Http
  */
 interface RequestAwareInterface
@@ -30,19 +29,16 @@ interface RequestAwareInterface
     /**
      *
      *
-     * @since 0.0.1
-     *
-     * @param Request $request
-     *
-     * @return void
+     * @return Request
      */
-    public function setRequest(Request $request);
+    public function getRequest();
 
     /**
      *
      *
-     * @since 0.0.1
-     * @return Request
+     * @param Request $request
+     *
+     * @return $this
      */
-    public function getRequest();
+    public function setRequest(Request $request);
 }

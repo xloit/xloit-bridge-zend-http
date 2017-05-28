@@ -22,7 +22,6 @@ use Zend\Http\Response;
 /**
  * A {@link ResponseAwareTrait} trait.
  *
- * @since   0.0.1
  * @package Xloit\Bridge\Zend\Http
  */
 trait ResponseAwareTrait
@@ -30,7 +29,6 @@ trait ResponseAwareTrait
     /**
      *
      *
-     * @since 0.0.1
      * @var Response
      */
     protected $response;
@@ -38,7 +36,6 @@ trait ResponseAwareTrait
     /**
      *
      *
-     * @since 0.0.1
      * @return Response
      */
     public function getResponse()
@@ -49,11 +46,9 @@ trait ResponseAwareTrait
     /**
      *
      *
-     * @since 0.0.1
-     *
      * @param Response $response
      *
-     * @return static
+     * @return $this
      */
     public function setResponse(Response $response)
     {

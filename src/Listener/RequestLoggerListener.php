@@ -27,7 +27,6 @@ use Zend\Stdlib\RequestInterface as HttpRequest;
 /**
  * A {@link RequestLoggerListener} class.
  *
- * @since   0.0.1
  * @package Xloit\Bridge\Zend\Http\Listener
  */
 class RequestLoggerListener extends AbstractListenerAggregate implements LoggerAwareInterface
@@ -39,11 +38,9 @@ class RequestLoggerListener extends AbstractListenerAggregate implements LoggerA
      * Implementors may add an optional $priority argument; the EventManager implementation will pass
      * this to the aggregate.
      *
-     * @since 0.0.1
-     *
      * @param EventManagerInterface $events
      * @param int                   $priority
-     * 
+     *
      * @return void
      */
     public function attach(EventManagerInterface $events, $priority = 1)
@@ -61,12 +58,9 @@ class RequestLoggerListener extends AbstractListenerAggregate implements LoggerA
     /**
      *
      *
-     * @since 0.0.1
-     *
      * @param MvcEvent $event
      *
      * @return void
-     * @throws \Zend\Log\Exception\InvalidArgumentException
      */
     public function logRequest(MvcEvent $event)
     {
@@ -80,7 +74,7 @@ class RequestLoggerListener extends AbstractListenerAggregate implements LoggerA
                 ]
             ];
 
-            $this->getLogger()->debug($messages, true);
+            $this->getLogger()->debug('Request', $messages);
         }
     }
 }

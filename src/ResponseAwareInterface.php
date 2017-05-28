@@ -22,7 +22,6 @@ use Zend\Http\Response;
 /**
  * A {@link ResponseAwareInterface} interface.
  *
- * @since   0.0.1
  * @package Xloit\Bridge\Zend\Http
  */
 interface ResponseAwareInterface
@@ -30,19 +29,16 @@ interface ResponseAwareInterface
     /**
      *
      *
-     * @since 0.0.1
-     *
-     * @param Response $request
-     *
-     * @return void
+     * @return Response
      */
-    public function setResponse(Response $request);
+    public function getResponse();
 
     /**
      *
      *
-     * @since 0.0.1
-     * @return Response
+     * @param Response $request
+     *
+     * @return $this
      */
-    public function getResponse();
+    public function setResponse(Response $request);
 }

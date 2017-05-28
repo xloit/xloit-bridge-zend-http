@@ -24,7 +24,6 @@ use Zend\Http\Response;
 /**
  * A {@link ResponseInitializer} class.
  *
- * @since   0.0.1
  * @package Xloit\Bridge\Zend\Http\Service
  */
 class ResponseInitializer extends AbstractServiceInitializer
@@ -32,7 +31,6 @@ class ResponseInitializer extends AbstractServiceInitializer
     /**
      *
      *
-     * @since 0.0.1
      * @return string
      */
     protected function getAwareInstanceInterface()
@@ -43,7 +41,6 @@ class ResponseInitializer extends AbstractServiceInitializer
     /**
      *
      *
-     * @since 0.0.1
      * @return string
      */
     protected function getInstanceInterface()
@@ -54,7 +51,6 @@ class ResponseInitializer extends AbstractServiceInitializer
     /**
      *
      *
-     * @since 0.0.1
      * @return array
      */
     protected function getServiceNames()
@@ -69,7 +65,6 @@ class ResponseInitializer extends AbstractServiceInitializer
     /**
      *
      *
-     * @since 0.0.1
      * @return array
      */
     protected function getMethods()
