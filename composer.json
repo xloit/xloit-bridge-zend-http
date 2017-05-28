@@ -1,41 +1,41 @@
 {
-    "name": "xloit/xloit-bridge-zend-http",
-    "type": "library",
-    "description": "Xloit Bridge Zend Http Library",
-    "keywords": [
-        "xloit",
-        "bridge-zend-http",
-        "library"
-    ],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Yudha Setiawan",
-            "email": "me@yudhasetiawan.com",
-            "homepage": "http://yudhasetiawan.com/"
-        }
-    ],
-    "require": {
-        "php": "^5.4 || ^7.0",
-        "xloit/xloit-bridge-zend-log": "^0.1",
-        "xloit/xloit-bridge-zend-eventmanager": "^0.0",
-        "xloit/xloit-bridge-zend-servicemanager": "^1.0",
-        "zendframework/zend-http": "^2.5",
-        "zendframework/zend-mvc": "^2.7.9 || ^3.0.2"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~4.0"
-    },
-    "suggest": {
-    },
-    "autoload": {
-        "psr-4": {
-            "Xloit\\Bridge\\Zend\\Http\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-0": {
-            "Xloit\\Bridge\\Zend\\Http\\Test\\": "tests/"
-        }
+  "name": "xloit/xloit-bridge-zend-http",
+  "type": "library",
+  "description": "Xloit Bridge Zend Http Library",
+  "keywords": [
+    "xloit",
+    "bridge-zend-http",
+    "library"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yudha Setiawan",
+      "email": "me@yudhasetiawan.com",
+      "homepage": "http://yudhasetiawan.com/"
     }
+  ],
+  "require": {
+    "php": "^5.4 || ^7.0",
+    "xloit/xloit-bridge-zend-log": "^0.1",
+    "xloit/xloit-bridge-zend-eventmanager": "^0.0",
+    "xloit/xloit-bridge-zend-servicemanager": "^1.0",
+    "zendframework/zend-http": "^2.5",
+    "zendframework/zend-mvc": "^2.7.9 || ^3.0.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "suggest": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Xloit\\Bridge\\Zend\\Http\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-0": {
+      "Xloit\\Bridge\\Zend\\Http\\Test\\": "tests/"
+    }
+  }
 }
